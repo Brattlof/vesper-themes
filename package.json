@@ -1,0 +1,36 @@
+{
+  "name": "vesper-vscode-themes",
+  "displayName": "Vesper Themes",
+  "description": "A collection of custom VS Code color themes by Brattlof.",
+  "version": "0.0.1",
+  "publisher": "Brattlof",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Vesper Dusk",
+        "uiTheme": "vs-dark",
+        "path": "./themes/vesper-dusk-color-theme.json"
+      },
+      {
+        "label": "Vesper Ember",
+        "uiTheme": "vs-dark",
+        "path": "./themes/vesper-ember-color-theme.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Brattlof/vesper-themes"
+  },
+  "scripts": {
+    "package": "npx @vscode/vsce package",
+    "install-theme": "npx @vscode/vsce package && code --install-extension vesper-vscode-themes-0.0.1.vsix"
+  },
+  "license": "MIT"
+}
